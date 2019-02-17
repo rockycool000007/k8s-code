@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mogambo-frontend
+  labels:
+    role: frontend
+spec:
+  containers:
+    - name: frontend
+      image: schoolofdevops/frontend:orange
+      ports:
+        - name: web
+          containerPort: 8079
+          protocol: TCP
